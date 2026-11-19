@@ -14,12 +14,12 @@ int[] sort(int[] num){
 }
 
 void main(){
+    IO.print("Enter nonnegative integer: ");
     Scanner s = new Scanner(System.in);
     int n = s.nextInt();
-    Scanner u = new Scanner(System.in);
     int []num = new int[n];
     for(int i=0;i<n;i++) {
-        num[i] = u.nextInt();
+        num[i] = s.nextInt();
     }
     sort(num);
     for(int l=0;l<n;l++){
